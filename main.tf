@@ -44,7 +44,7 @@ resource "aws_iam_user_policy" "ec2_s3_policy" {
 # Create Access Keys for the User
 resource "aws_iam_access_key" "ec2_s3_access_key" {
   for_each = aws_iam_user.ec2_s3_user
-  #user = aws_iam_user.ec2_s3_user.name 
+  #user = aws_iam_user.ec2_s3_user.name
   user = each.value.name
 }
 

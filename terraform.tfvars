@@ -1,1 +1,0 @@
-username =  ["ec2-s3-user1", "ec2-s3-user2", "ec2-s3-user3"]

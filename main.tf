@@ -20,14 +20,14 @@ resource "aws_iam_user_policy" "ec2_s3_policy" {
     Version = "2012-10-17"
     Statement = [
       {
-        Effect = "Allow"
+        Effect = "Deny"
         Action = [
           "ec2:DescribeInstances" # List EC2 instances
         ]
         Resource = "*"
       },
       {
-        Effect = "Allow"
+        Effect = "Deny"
         Action = [
           "s3:GetObject", # Read objects
           "s3:ListBucket" # List bucket contents
